@@ -1,5 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
+
+
 import './header.styles.scss';
 import {Link} from 'react-router-dom';
 import {auth} from '../../firebase/firebase.utils';

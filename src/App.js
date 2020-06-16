@@ -23,7 +23,7 @@ unsubscribeFromAuth=null;
     if(userAuth){
       const userRef = await createUserProfileDocument(userAuth);
       userRef.onSnapshot(snapShot =>{
-       this.props.setCurrentUser({
+       setCurrentUser({
            id:snapShot.id,
            ...snapShot.data()
        });
@@ -42,7 +42,7 @@ unsubscribeFromAuth=null;
   render(){
   return (
     <div >
-    <Header />
+    <Header/>
   <Switch>
 <Route exact path='/' component={HomePage} />
 <Route path='/shop' component={ShopPage} />
